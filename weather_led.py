@@ -61,7 +61,7 @@ def blink_led(color, vtime):
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(color, GPIO.OUT)
     cnt = 0
-    while vtime < cnt:
+    while vtime > cnt:
        GPIO.output(color, True)
        time.sleep(0.5)
        GPIO.output(color, False)
@@ -98,7 +98,7 @@ GREEN = 24
 TIME = 3600
 
 # OpenWeatherMapApiのパス(API_KEYは自分の取得したものを入れる)
-API_KEY = 'hoge'
+API_KEY = ''
 URL = 'http://api.openweathermap.org/data/2.5/forecast?q=Tokyo,jp&APPID='
 
 if __name__ == '__main__':
