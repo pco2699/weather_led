@@ -124,7 +124,7 @@ if __name__ == '__main__':
         evening_rain_flag = True
 
     # 直近・9時間後のフラグをかけ合わせてresultに格納
-    result = morning_rain_flag and evening_rain_flag
+    result = morning_rain_flag or evening_rain_flag
 
     if result:
         # 雨が降る場合
