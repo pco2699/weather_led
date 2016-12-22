@@ -1,0 +1,2 @@
+# weather_led
+Raspberry PiでOpenWhetherAPIから天気情報を取ってきてLチカする
